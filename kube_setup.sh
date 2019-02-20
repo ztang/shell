@@ -29,4 +29,5 @@ apt-get update && apt-get install -y kubeadm
 
 echo ' cgroup_enable=memory  cgroup_memory=1 '>>/boot/cmdline.txt
 
+echo 'All tasks finished susccessfully, rebooting now...'
 reboot
