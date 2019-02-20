@@ -12,10 +12,9 @@ sudo apt-get install -y \
 
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 
-sudo add-apt-repository \
-    "deb [arch=armhf] https://download.docker.com/linux/debian \
-    $(lsb_release -cs) \
-    stable"
+echo "deb [arch=armhf] https://download.docker.com/linux/debian \
+     $(lsb_release -cs) stable" | \
+    sudo tee /etc/apt/sources.list.d/docker.list
 
 sudo apt-get update
 sudo apt-get install -y docker-ce=18.06.0~ce~3-0~debian
