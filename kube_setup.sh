@@ -3,7 +3,7 @@
 # install docker
 
 sudo apt-get update
-sudo apt-get install \
+sudo apt-get install -y \
      apt-transport-https \
      ca-certificates \
      curl \
@@ -18,7 +18,7 @@ sudo add-apt-repository \
     stable"
 
 sudo apt-get update
-sudo apt-get install docker-ce=18.06.0~ce~3-0~debian
+sudo apt-get install -y docker-ce=18.06.0~ce~3-0~debian
 
 # install kubernetes
 
