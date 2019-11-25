@@ -17,7 +17,7 @@ echo "deb [arch=armhf] https://download.docker.com/linux/debian \
     sudo tee /etc/apt/sources.list.d/docker.list
 
 sudo apt-get update
-sudo apt-get install -y docker-ce=18.06.0~ce~3-0~debian
+sudo apt-get install -y docker-ce=18.06.2~ce~3-0~debian
 
 # install kubernetes
 
